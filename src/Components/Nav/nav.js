@@ -6,9 +6,8 @@ import {Link, useLocation} from 'react-router-dom'
 import {useState} from 'react'
 const Nav = () =>{
     const location = useLocation()
-    console.log(location)
     const [isClicked, setIsClicked] = useState(
-        location.pathname === '/' ? 'profile' : location.pathname.slice(1)
+        location.pathname === '/portfolio/' ? 'profile' : location.pathname.replace("/portfolio/","")
     )
     const Navlist = [
         {title : 'profile',icon : <FaRegUser className='nav-icon' />},
@@ -20,7 +19,7 @@ const Nav = () =>{
             <ul className='navLists'>
                 {Navlist.map((item)=>(
                     <Link 
-                        to={(item.title === 'profile' ? '/' : `/${item.title}`)} 
+                        to={(item.title === 'profile' ? '/portfolio/' : `/portfolio/${item.title}`)} 
                         key={item.title} 
                         className={`navList ${(isClicked === item.title ? 'clicked' : '')}`}
                         onClick= {()=> setIsClicked(item.title)}
