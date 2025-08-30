@@ -16,5 +16,10 @@ a{
 .Content{
   margin-left: 120px;
 }
+@media(max-width: 500px){
+  .Content{
+    margin-left: 80px;
+  }
+}
 
 

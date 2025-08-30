@@ -31,3 +31,15 @@ nav{
     background-color: #ffff;
     color: #1F3942;
 }
+@media(max-width: 500px){
+    nav{
+        width: 80px;
+    }
+    .navList{
+        width: 40px;
+        height: 40px;
+    }
+    .nav-icon{
+        font-size: 16px;
+    }
+}

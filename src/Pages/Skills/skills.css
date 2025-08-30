@@ -229,3 +229,18 @@
         width: 180px;
     }
 }
+@media(max-width: 500px){
+    .skills-half{
+        min-width:0;
+    }
+    .skills-grid{
+        grid-template-columns: 1fr;
+    }
+    .skill-card{
+        width: 215px;
+    }
+    .education-item{
+        width: 215px;
+    }
+
+}
