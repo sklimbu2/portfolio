@@ -1,0 +1,231 @@
+.skills-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skills-half {
+    flex: 1;
+    min-width: 300px;
+}
+
+.skills-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1.2rem;
+}
+
+.skill-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 130px;
+}
+
+.skill-card.active {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.skill-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-image-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.skill-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.proficiency-bar {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    border-radius: 2px;
+}
+
+.skill-card h5 {
+    margin: 0.5rem 0 0;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.skill-details-expanded {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    z-index: 20;
+    text-align: center;
+}
+
+.skill-details-expanded:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+.skill-details-expanded p {
+    font-size: 0.8rem;
+    margin: 0 0 0.5rem;
+    color: #4a5568;
+    line-height: 1.4;
+}
+
+.proficiency-text {
+    font-size: 0.75rem;
+    color: #4facfe;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    background: rgba(79, 172, 254, 0.1);
+    border-radius: 12px;
+}
+
+.education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.education-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    background: white;
+    padding: 1.2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+    transition: all 0.3s ease;
+}
+
+.education-item:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.education-image-container {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #f0f0f0;
+}
+
+.education-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.education-details {
+    flex: 1;
+}
+
+.education-details h4 {
+    margin: 0 0 0.3rem;
+    color: #2d3748;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.education-details .institution {
+    font-weight: 600;
+    color: #4a5568;
+    margin: 0 0 0.2rem;
+    font-size: 0.9rem;
+}
+
+.education-details .period {
+    color: #718096;
+    margin: 0 0 0.5rem;
+    font-size: 0.85rem;
+}
+
+.education-details .details {
+    color: #4a5568;
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.education-item:hover .details {
+    opacity: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .skills-container {
+        padding: 1rem;
+    }
+    
+    .skills {
+        flex-direction: column;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    }
+    
+    .education-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .education-image-container {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .skill-details-expanded {
+        width: 180px;
+    }
+}

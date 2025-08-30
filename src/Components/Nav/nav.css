@@ -1,0 +1,33 @@
+nav{
+    width: 120px;
+    height:100vh;
+    background-color: #1F3942;
+    position:fixed;
+}
+.navLists{
+    position: relative;
+    top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+.navList{
+    width: 55px;
+    height: 55px;
+    border: 1px solid #ffff;
+    color: #ffff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.nav-icon{
+    font-size: 24px;
+}
+.clicked{
+    background-color: #ffff;
+    color: #1F3942;
+}
