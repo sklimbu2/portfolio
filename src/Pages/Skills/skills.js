@@ -10,12 +10,12 @@ const Skills = () => {
     const skills = [
         {title:'HTML', imgUrl:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg', proficiency: 90, description: 'Semantic HTML5, accessibility, and modern markup practices'},
         {title:'CSS', imgUrl:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg', proficiency: 85, description: 'CSS3, Flexbox, Grid, animations, and responsive design'},
-        {title:'JavaScript', imgUrl:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', proficiency: 88, description: 'ES6+, async programming, DOM manipulation'},
-        {title:'React Js', imgUrl:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', proficiency: 92, description: 'Hooks, Context API, state management, and performance optimization'},
-        {title:'Vue Js', imgUrl:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg', proficiency: 80, description: 'Vue 3, Composition API, Vuex, and Vue Router'},
-        {title:'Node Js', imgUrl:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', proficiency: 85, description: 'Express.js, REST APIs, authentication, and database integration'},
-        {title:'AWS', imgUrl:'https://i.scdn.co/image/ab6765630000ba8a49f81331af04ec3614a5a741', proficiency: 75, description: 'EC2, S3, Lambda, and basic cloud infrastructure management'},
-        {title:'MongoDB', imgUrl:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', proficiency: 82, description: 'Database design, aggregation, and performance optimization'},
+        {title:'JavaScript', imgUrl:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg', proficiency: 75, description: 'ES6+, async programming, DOM manipulation'},
+        {title:'React Js', imgUrl:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', proficiency: 70, description: 'Hooks, Context API, state management, and performance optimization'},
+        {title:'Vue Js', imgUrl:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg', proficiency: 45, description: 'Vue 3, Composition API, Vuex, and Vue Router'},
+        {title:'Node Js', imgUrl:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', proficiency: 35, description: 'Express.js, REST APIs, authentication, and database integration'},
+        {title:'AWS', imgUrl:'https://i.scdn.co/image/ab6765630000ba8a49f81331af04ec3614a5a741', proficiency: 30, description: 'EC2, S3, Lambda, and basic cloud infrastructure management'},
+        {title:'MongoDB', imgUrl:'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', proficiency: 40, description: 'Database design, aggregation, and performance optimization'},
     ];
 
     const education = [
